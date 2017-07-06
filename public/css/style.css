@@ -88,29 +88,21 @@ footer{
 /* Customer CSS */
 
 .video-player-div{
-  min-width: 60%;
-  max-width: 60%;
-  display: inline-block;
-  min-height: 850px;
+
+  min-height: 400px;
 }
 
 .chat-div{
-  min-width: 30%;
-  max-width: 30%;
-  display: inline-block;
-  min-height: 850px;
+
+  min-height: 400px;
 }
 
 .twitch-userinfo-div{
-  min-width: 60%;
-  max-width: 60%;
-  display: inline-block;
-  min-height: 400px;
+
+  min-height: 350px;
 }
 
 .faq-div{
-  min-width: 30%;
-  max-width: 30%;
-  display: inline-block;
-  min-height: 400px;
+
+  min-height: 350px;
 }
