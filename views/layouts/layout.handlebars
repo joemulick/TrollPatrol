@@ -3,9 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>LoginApp</title>
+	<title>Troll Patrol</title>
 	<link rel="stylesheet" href="/css/bootstrap.css" />
 	<link rel="stylesheet" href="/css/style.css" />
+  <script type="text/javascript" src="../../public/js/indexFunctionality.js"></script>
 </head>
 
 
@@ -32,9 +33,9 @@
   </div>
 </nav>
 
-	<div class="container">
+	<div class="container-fluid">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-12 text-center">
           {{#if success_msg}}
             <div class="alert alert-success">{{success_msg}}</div>
           {{/if}}
@@ -54,9 +55,12 @@
       </div>
 
       <footer class="footer">
-        <p>&copy; 2015 LoginApp, Inc.</p>
+        <p>&copy; Troll Patrol</p>
       </footer>
 
-    </div> <!-- /container -->
+  </div> <!-- /container -->
+
+<script type="text/javascript" src="https://gdata.youtube.com/feeds/api/users/Imperfect+Journey/uploads?max-results=1&orderby=published&v=2&alt=jsonc&callback=showVideo"></script>
+
 </body>
 </html>

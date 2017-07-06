@@ -1,6 +1,5 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -87,3 +86,31 @@ footer{
 }
 
 /* Customer CSS */
+
+.video-player-div{
+  min-width: 60%;
+  max-width: 60%;
+  display: inline-block;
+  min-height: 850px;
+}
+
+.chat-div{
+  min-width: 30%;
+  max-width: 30%;
+  display: inline-block;
+  min-height: 850px;
+}
+
+.twitch-userinfo-div{
+  min-width: 60%;
+  max-width: 60%;
+  display: inline-block;
+  min-height: 400px;
+}
+
+.faq-div{
+  min-width: 30%;
+  max-width: 30%;
+  display: inline-block;
+  min-height: 400px;
+}
