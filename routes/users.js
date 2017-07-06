@@ -15,19 +15,24 @@ router.get('/login', function(req, res){
 	res.render('login');
 });
 
+// Go to user dashboard
+router.get('/dashboard/:id', function(req, res){
+	res.render('userDash');
+});
+
 // Register User
 router.post('/register', function(req, res){
-	var name = req.body.name;
 	var email = req.body.email;
 	var username = req.body.username;
 	var password = req.body.password;
 	var password2 = req.body.password2;
-	//
-	var twitchURL = req.body.twitchURL
+	var twitchChannelName = req.body.twitchChannelName
+	var twitchChannelURL = req.body.twitchChannelURL
 	
 
 	// Validation
-	req.checkBody('name', 'Name is required').notEmpty();
+	req.checkBody('twitchChannelName', 'You must input a twitch channel name').notEmpty();
+	req.checkBody('twitchChannelURL', 'You must input a twitch channel url').notEmpty();
 	req.checkBody('email', 'Email is required').notEmpty();
 	req.checkBody('email', 'Email is not valid').isEmail();
 	req.checkBody('username', 'Username is required').notEmpty();
@@ -42,9 +47,10 @@ router.post('/register', function(req, res){
 		});
 	} else {
 		var newUser = new User({
-			name: name,
-			email:email,
 			username: username,
+			email:email,
+			twitchChannelName: twitchChannelName,
+			twitchChannelURL: twitchChannelURL,
 			password: password
 		});
 
@@ -99,7 +105,7 @@ router.get('/logout', function(req, res){
 
 	req.flash('success_msg', 'You are logged out');
 
-	res.redirect('/users/login');
+	res.redirect('/');
 });
 
 module.exports = router;

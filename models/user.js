@@ -5,15 +5,20 @@ var bcrypt = require('bcryptjs');
 var UserSchema = mongoose.Schema({
 	username: {
 		type: String,
-		index:true
+		index:true,
+		unique: true
 	},
 	password: {
 		type: String
 	},
 	email: {
+		type: String,
+		unique: true
+	},
+	twitchChannelName: {
 		type: String
 	},
-	name: {
+	twitchChannelURL: {
 		type: String
 	}
 });
