@@ -56,6 +56,8 @@ We any additional ideas for functionality or content on the website will be heav
 
 If you have ideas write them down similar to how I described above and if you have the time draw up wireframs like this!
 
+![landingpage](https://user-images.githubusercontent.com/20348042/27939889-72b37222-627c-11e7-8331-3d4dc8467892.jpg)
+
 
  
 
