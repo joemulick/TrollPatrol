@@ -9,6 +9,8 @@ If you would like to get involved in either the coding aspect of the website, th
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+
+
 From a functionality perspective this is what we were looking for the website to accomplish:
 
 LANDING PAGE:
@@ -18,7 +20,11 @@ LANDING PAGE:
   - There will also be a small section for troll patrol related FAQ's (like how do i get involved with troll patrol)
   - Links to all troll patrols social platforms
   
+  
+  
 ----------------------------------------------------------------------------------------------------------------------------------------
+  
+  
   
 As you might be able to tell from the above landing page, the main goal of the troll patrol website is to 
 
@@ -28,19 +34,29 @@ As you might be able to tell from the above landing page, the main goal of the t
 With that being said, troll patrol will let anyone stream on our website as long as they have been approved by Troll Patrol founding members / the community itself.
 
 
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------
+
+USER DASHBOARD:
 
 You can sign up on the website to get access to the dashboard.
 
-The dashboard will have multiple "Tier" levels that will display custom content.
+The dashboard will have multiple "Tier" levels that will display custom content depending on the status of the user.
 
-You can sign up for a basic account to get access to the "newbie dashboard".
+Newbie account status will have access to the basic dashboard.
+Streamer account status will have access to streamer controls which will allow them to stream from the main landing page (once they have been verified).
 
-The "newbie dashboard"
-  
-USER DASHBOARD:
+Ultimatly there will be a system set up in which authorized streamsers can schedule amungst themselved who gets to stream on the main page and eventually you can cycle through all the avilible troll patrol authorezed streamers via something like a carousel. 
 
-  -Once you register an account on troll patrol 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+We any additional ideas for functionality or content on the website will be heavily considered! 
+
+If you have ideas write them down similar to how I described above and if you have the time draw up wireframs like this!
+
+
  
 
 
