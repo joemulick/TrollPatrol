@@ -52,7 +52,7 @@ Ultimatly there will be a system set up in which authorized streamsers can sched
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-We any additional ideas for functionality or content on the website will be heavily considered! 
+Any additional ideas for functionality or content on the website will be heavily considered! 
 
 If you have ideas write them down similar to how I described above and if you have the time draw up wireframs like this!
 
