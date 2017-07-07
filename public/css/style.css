@@ -87,22 +87,24 @@ footer{
 
 /* Customer CSS */
 
-.video-player-div{
-
-  min-height: 400px;
-}
-
-.chat-div{
-
-  min-height: 400px;
-}
-
 .twitch-userinfo-div{
-
   min-height: 350px;
 }
 
 .faq-div{
-
   min-height: 350px;
+}
+
+
+.twitch-live-player-container{
+  max-height: 567px !important;
+  margin-right: 10%;
+}
+.twitch-live-player-info-container{
+
+}
+
+
+.twitch-live-chat-container{
+  max-height: 567px !important;
 }
