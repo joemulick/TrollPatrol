@@ -58,7 +58,7 @@ If you have ideas write them down similar to how I described above and if you ha
 
                                     - LANDING PAGE -
 
-![landingpage](https://user-images.githubusercontent.com/20348042/27939889-72b37222-627c-11e7-8331-3d4dc8467892.jpg)
+![landingpage](https://user-images.githubusercontent.com/20348042/28101339-c533bd00-667c-11e7-8d43-69873bcec373.png)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -66,7 +66,8 @@ If you have ideas write them down similar to how I described above and if you ha
 
                                     - NEWBIE DASHBOARD - 
 
-![newbiedash](https://user-images.githubusercontent.com/20348042/27939921-9939abbe-627c-11e7-940b-949ba07adcf5.jpg)
+![userdash](https://user-images.githubusercontent.com/20348042/28101373-f3f0e190-667c-11e7-8dd1-398911f80dfb.png)
+
 
 
 
