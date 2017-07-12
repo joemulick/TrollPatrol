@@ -20,7 +20,9 @@ var UserSchema = mongoose.Schema({
 	},
 	twitchChannelURL: {
 		type: String
-	}
+	},
+	authorizedStreamer: false
+	// loggedIn: false
 });
 
 var User = module.exports = mongoose.model('User', UserSchema);

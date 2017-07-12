@@ -19,9 +19,10 @@
       <a class="navbar-brand" href="/">
         <img alt="Brand" src="...">
       </a>
+    </div>
           <ul class="nav navbar-nav navbar-right">
             {{#if user}}
-              <li role="presentation"><a href="/">Live Stream</a></li>
+              <li role="presentation"><a href="/">Back to streams</a></li>
               <li role="presentation"><a href="/users/dashboard/{{user._id}}">Dashboard</a></li>
               <li role="presentation"><a href="/users/logout">Logout</a></li>
             {{else}}
@@ -29,7 +30,6 @@
               <li role="presentation"><a href="/users/register">Register</a></li>
             {{/if}}
           </ul>
-    </div>
   </div>
 </nav>
 

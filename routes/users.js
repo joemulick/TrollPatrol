@@ -26,13 +26,11 @@ router.post('/register', function(req, res){
 	var username = req.body.username;
 	var password = req.body.password;
 	var password2 = req.body.password2;
-	var twitchChannelName = req.body.twitchChannelName
 	var twitchChannelURL = req.body.twitchChannelURL
 	
 
 	// Validation
 	req.checkBody('twitchChannelName', 'You must input a twitch channel name').notEmpty();
-	req.checkBody('twitchChannelURL', 'You must input a twitch channel url').notEmpty();
 	req.checkBody('email', 'Email is required').notEmpty();
 	req.checkBody('email', 'Email is not valid').isEmail();
 	req.checkBody('username', 'Username is required').notEmpty();
@@ -50,7 +48,6 @@ router.post('/register', function(req, res){
 			username: username,
 			email:email,
 			twitchChannelName: twitchChannelName,
-			twitchChannelURL: twitchChannelURL,
 			password: password
 		});
 
@@ -100,7 +97,37 @@ router.post('/login',
     res.redirect('/');
   });
 
+// The Below code changes the logged in status to true when the user logs in.
+// This adds complexity due to passports unique cookie strategy because 
+// the status of loggedIn would need to be changed back to false on
+// the session expiring or 
+//
+// router.post('/login',
+//   passport.authenticate('local',{failureRedirect: '/users/login' }),
+//   function(req, res) {
+// 	var username = req.user.username; // here we assume the username is stored as 'username' as you have in your code but change this based on your schema
+// 	   User.findOne({username: username}, function(err, user, data) {
+// 	      if(err) res.send(err);
+// 	      user.loggedIn = true;
+// 	      user.save(function (err) {
+// 	         if (err) {
+// 	            console.log(err);
+// 	         } else {
+// 	            res.redirect('/users/dashboard/' + req.user.username);
+// 	         }
+// 	      });
+//    		});
+//  });
+
 router.get('/logout', function(req, res){
+	var username = req.user.username;
+
+	console.log(
+	'/////////////////////////////////////////////////'
+	 + '<br>' + req.user.username + '<br>' + 
+	'/////////////////////////////////////////////////'
+	);
+
 	req.logout();
 
 	req.flash('success_msg', 'You are logged out');

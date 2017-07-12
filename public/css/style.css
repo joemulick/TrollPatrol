@@ -98,8 +98,8 @@ footer{
 
 .twitch-live-player-container{
   max-height: 567px !important;
-  margin-right: 10%;
 }
+
 .twitch-live-player-info-container{
 
 }
@@ -107,4 +107,15 @@ footer{
 
 .twitch-live-chat-container{
   max-height: 567px !important;
+}
+
+.icons{
+  float:right !important;
+}
+
+
+/* USER DASH */
+
+.upper-dashboard-container{
+
 }
