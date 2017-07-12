@@ -101,8 +101,14 @@ footer{
 }
 
 .twitch-live-player-info-container{
+  max-width: 744px;
+  margin: 0px auto;
+}
+
+.streamer-name-header{
 
 }
+
 
 
 .twitch-live-chat-container{
