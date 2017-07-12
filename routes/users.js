@@ -22,11 +22,13 @@ router.get('/dashboard/:id', function(req, res){
 
 // Register User
 router.post('/register', function(req, res){
+	// var yearJoined = new Date().getFullYear;
+
 	var email = req.body.email;
 	var username = req.body.username;
 	var password = req.body.password;
 	var password2 = req.body.password2;
-	var twitchChannelURL = req.body.twitchChannelURL
+	var twitchChannelName = req.body.twitchChannelName
 	
 
 	// Validation
@@ -48,7 +50,9 @@ router.post('/register', function(req, res){
 			username: username,
 			email:email,
 			twitchChannelName: twitchChannelName,
-			password: password
+			password: password,
+			memberStatus: 'newbie'
+
 		});
 
 		User.createUser(newUser, function(err, user){
@@ -92,7 +96,7 @@ passport.deserializeUser(function(id, done) {
 });
 
 router.post('/login',
-  passport.authenticate('local', {successRedirect:'/', failureRedirect:'/users/login',failureFlash: true}),
+  passport.authenticate('local', {successRedirect:'/users/dashboard/:username', failureRedirect:'/users/login',failureFlash: true}),
   function(req, res) {
     res.redirect('/');
   });
