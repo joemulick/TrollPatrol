@@ -17,20 +17,20 @@
 <body>
 
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container-fluid outernav-container">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">
-        <img class="tplogo" alt="Brand" src="https://res.cloudinary.com/ddsihrmda/image/upload/v1500248911/trollpatrollogoone_fzcptm.png">
+        <img class="tplogo" alt="Brand" src="https://res.cloudinary.com/ddsihrmda/image/upload/v1500248911/trollpatrollogoone_fzcptm.png" height="80px">
       </a>
     </div>
           <ul class="nav navbar-nav navbar-right">
             {{#if user}}
-              <li role="presentation"><a href="/">Back to streams</a></li>
-              <li role="presentation"><a href="/users/dashboard/{{user.username}}">Dashboard</a></li>
-              <li role="presentation"><a href="/users/logout">Logout</a></li>
+              <li role="presentation" class="nav-button"><a class="nav-button-link" href="/">Back to streams</a></li>
+              <li role="presentation" class="nav-button"><a class="nav-button-link" href="/users/dashboard/{{user.username}}">Dashboard</a></li>
+              <li role="presentation" class="nav-button"><a class="nav-button-link" href="/users/logout">Logout</a></li>
             {{else}}
-              <li role="presentation"><a href="/users/login">Login</a></li>
-              <li role="presentation"><a href="/users/register">Register</a></li>
+              <li role="presentation" class="nav-button"><a class="nav-button-link" href="/users/login"><p>Login</p></a></li>
+              <li role="presentation" class="nav-button"><a class="nav-button-link" href="/users/register"><p>Register</p></a></li>
             {{/if}}
           </ul>
   </div>
