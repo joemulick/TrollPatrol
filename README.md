@@ -58,9 +58,7 @@ If you have ideas write them down similar to how I described above and if you ha
 
                                     - LANDING PAGE -
 
-![landingpage](https://user-images.githubusercontent.com/20348042/28101339-c533bd00-667c-11e7-8d43-69873bcec373.png)
-
-
+![lpn2test](https://user-images.githubusercontent.com/20348042/28294401-bd5a036e-6b0e-11e7-8102-9ee8044f6312.jpg)
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
