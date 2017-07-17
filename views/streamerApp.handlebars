@@ -1,0 +1,45 @@
+<h2 class="page-header">Streamer Application</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" action="/users/streamerApp">
+
+  <div class="form-group">
+    <label>Username</label>
+    <input type="text" class="form-control" placeholder="Username" name="username">
+  </div>
+
+  <div class="form-group">
+    <label class="checkbox-inline">
+      <input class="messageCheckbox" type="checkbox" id="inlineCheckbox1" value="League of Legends">League of Legends
+    </label>
+    <label class="checkbox-inline">
+      <input class="messageCheckbox" type="checkbox" id="inlineCheckbox2" value="Fortnite">Fortnite
+    </label>
+    <label class="checkbox-inline">
+      <input class="messageCheckbox" type="checkbox" id="inlineCheckbox3" value="Counter Strike">Counter Strike
+    </label>
+    <label class="checkbox-inline">
+      <input class="messageCheckbox" type="checkbox" id="inlineCheckbox5" value="PLAYERUNKNOWN'S BATTLEGROUNDS">PLAYERUNKNOWN'S BATTLEGROUNDS
+    </label>
+    <label class="checkbox-inline">
+      <input class="messageCheckbox" type="checkbox" id="inlineCheckbox6" value="Grand Theft Auto V">Grand Theft Auto V
+    </label>
+    <label class="checkbox-inline">
+      <input class="messageCheckbox" type="checkbox" id="inlineCheckbox7" value="Hearthstone">Hearthstone
+    </label>  
+    <label class="checkbox-inline">
+      <input class="messageCheckbox" type="checkbox" id="inlineCheckbox8" value="Overwatch">Overwatch
+    </label>
+    <label class="checkbox-inline">
+      <input class="messageCheckbox" type="checkbox" id="inlineCheckbox9" value="World of Warcraft">World of Warcraft
+    </label>
+    <label class="checkbox-inline">
+      <input class="messageCheckbox" type="checkbox" id="inlineCheckbox10" value="H1Z1: King of the Hill">H1Z1: King of the Hill
+    </label>  
+  </div>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

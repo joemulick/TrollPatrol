@@ -85,7 +85,23 @@ footer{
   margin-top:40px;
 }
 
-/* Customer CSS */
+/* Custom CSS */
+
+/* Logo in top left of main screen */
+.tplogo{
+  max-height: 45px;
+  max-width: 45px;
+}
+
+.navbar-header{
+  margin-left: 2% !important;
+}
+
+.navbar-brand{
+  padding: 0px !important;
+}
+
+/* Logo in top left of main screen END */
 
 .twitch-userinfo-div{
   min-height: 350px;
@@ -94,7 +110,6 @@ footer{
 .faq-div{
   min-height: 350px;
 }
-
 
 .twitch-live-player-container{
   max-height: 567px !important;
@@ -106,9 +121,8 @@ footer{
 }
 
 .streamer-name-header{
-
+  margin: 0px auto;
 }
-
 
 
 .twitch-live-chat-container{
@@ -119,9 +133,119 @@ footer{
   float:right !important;
 }
 
-
-/* USER DASH */
-
-.upper-dashboard-container{
-
+/* *******************************  */
+/* Upper Social Container           */
+/* *******************************  */
+.social-media-container-1{
+  height: 453px;
 }
+.panel-body{
+  min-height: 100%;
+}
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+/* DIVS */
+.discord-social-written-div{
+  min-height: 25%;
+}
+
+.youtube-social-written-div{
+  min-height: 25%;
+}
+
+.facebook-social-written-div{
+  min-height: 25%;
+  margin-bottom: 8%;
+  margin-top: 4%;
+}
+
+.twitter-social-written-div{
+  min-height: 25%;
+  margin-bottom: 18%;
+  margin-top: 2%;
+}
+
+/* IMAGES */
+.discord-social-written{
+  width:80%;/* you can use % */
+  height: auto;  
+}
+
+.youtube-social-written{
+  width:60%;/* you can use % */
+  height: auto;
+}
+
+.facebook-logo-small{
+  width:20%;/* you can use % */
+  height: auto;
+}
+
+.facebook-social-written{
+  width:60%;/* you can use % */
+  height: auto;  
+}
+
+.twitter-logo-small{
+  width:20%;/* you can use % */
+  height: auto;  
+}
+
+.twitter-social-written{
+  width:60%;/* you can use % */
+  height: auto;
+}
+/* *******************************  */
+/* Upper Social Container End       */
+/* *******************************  */
+
+/* *******************************  */
+/* Lower Game Info Container        */
+/* *******************************  */
+
+.social-media-container-2{
+  height: 453px;
+}
+/* DIVS */
+.fortnite-game-info-div{
+  min-height: 30%;
+}
+
+.league-game-info-div{
+  min-height: 30%;
+}
+
+.csgo-social-written-div{
+  min-height: 30%;
+}
+/* DIVS END */
+/* IMAGES */
+.fortnite-game-info-logo{
+  width:50%;/* you can use % */
+  height: auto;  
+}
+.league-game-info-logo{
+  width:50%;/* you can use % */
+  height: auto;  
+}
+.csgo-social-written-logo{
+  width:50%;/* you can use % */
+  height: auto;
+  margin-bottom: 15%; 
+}
+.reddit-info-logo{
+  width:15%;/* you can use % */
+  height: auto;
+  margin-left: 15%;
+}
+.bottom-reddit-logo{
+  margin-bottom: 15%;
+}
+/* IMAGES END */
+
+/* *******************************  */
+/* Lower Game Info Container End    */
+/* *******************************  */

@@ -2,6 +2,13 @@ var express = require('express');
 var router = express.Router();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var mongo = require('mongodb');
+var mongoose = require('mongoose');
+
+
+// Database configuration with mongoose
+mongoose.connect("mongodb://localhost/TrollPatrol");
+var db = mongoose.connection;
 
 var User = require('../models/user');
 
@@ -19,6 +26,10 @@ router.get('/login', function(req, res){
 router.get('/dashboard/:id', function(req, res){
 	res.render('userDash');
 });
+
+router.get('/streamerApp', function(req,res){
+	res.render('streamerApp');
+})
 
 // Register User
 router.post('/register', function(req, res){
@@ -100,6 +111,34 @@ router.post('/login',
   function(req, res) {
     res.redirect('/');
   });
+
+
+
+router.post('/streamerApp', function(req, res){
+	var userid = req.user._id;
+	var query = { games: req.body.messageCheckbox };
+	User.update({ _id: userid }, { $set: query });
+})
+// router.post('/streamerApp', function(req, res){
+// 	var twitchURL = req.body.twitchURL;
+//     console.log("Put is working!");
+
+//     db.TrollPatrol('games').findAndModify(
+//          {"name": req.body.username },
+//          {},
+//          {$set: 
+//             { "twitchChannelURL": twitchURL , "games": req.body.messageCheckbox }
+//          },
+//          {},
+//          function(err, object) {
+//              if (err){
+//                  console.warn(err.message);  // returns error if no matching object found
+//              }else{
+//                  console.log("Update complete");
+//              }
+//          })
+//     res.redirect('index')
+// })
 
 // The Below code changes the logged in status to true when the user logs in.
 // This adds complexity due to passports unique cookie strategy because 

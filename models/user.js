@@ -25,7 +25,8 @@ var UserSchema = mongoose.Schema({
 	date: { type: Date, default: Date.now },
 	memberStatus: {
 		type: String
-	}
+	},
+	games: [ { title: String } ]
 	// loggedIn: false
 });
 

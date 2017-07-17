@@ -10,6 +10,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
+var logger = require("morgan");
 
 mongoose.connect('mongodb://localhost/TrollPatrol');
 var db = mongoose.connection;
@@ -19,7 +20,8 @@ var users = require('./routes/users');
 
 // Init App
 var app = express();
-
+// Morgan Logger for helping with error checking
+app.use(logger("dev"));
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({defaultLayout:'layout'}));
@@ -75,6 +77,26 @@ app.use(function (req, res, next) {
 });
 
 
+app.post('/streamerApp', function(req, res){
+  var twitchURL = req.body.twitchURL;
+    console.log("Put is working!");
+
+    db.TrollPatrol('games').findAndModify(
+         {"name": req.body.username },
+         {},
+         {$set: 
+            { "twitchChannelURL": twitchURL , "games": req.body.messageCheckbox }
+         },
+         {},
+         function(err, object) {
+             if (err){
+                 console.warn(err.message);  // returns error if no matching object found
+             }else{
+                 console.log("Update complete");
+             }
+         })
+    res.redirect('index')
+})
 
 app.use('/', routes);
 app.use('/users', users);
