@@ -87,6 +87,15 @@ footer{
 
 /* Custom CSS */
 
+.live-iframe-player{
+  width: 100%;
+  height: 100%;
+}
+
+.twitch-live-player-container-container{
+  height: 600px;
+}
+
 /* Logo in top left of main screen */
 .tplogo{
   max-height: 45px;
@@ -112,7 +121,8 @@ footer{
 }
 
 .twitch-live-player-container{
-  max-height: 567px !important;
+  width: 100%;
+  height: 100%;
 }
 
 .twitch-live-player-info-container{
