@@ -596,3 +596,93 @@ footer{
 /* ********************** */
 /* ********************** */
 /* ********************** */
+
+/* ********************** */
+/* ********************** */
+/* ********************** */
+
+/* **********************      */
+/* userDash Page CSS           */
+/* **********************      */
+
+.text-color-userdash{
+  color:#e3ecf9;
+}
+
+/* Welcome user graphic */
+
+
+
+.welcome-div{
+  width: 25%;
+  margin-left: 8%;
+  background-color:grey;
+  border-radius: 1em;
+  height: auto;
+  padding: 10px;
+  line-height: 0;
+  background-image: url('https://res.cloudinary.com/ddsihrmda/image/upload/v1500408202/backgroundunedited_mkplw0.jpg');
+  background-size:cover ; /* Adjust the scale of your border image */
+  margin-top: 2.5%;
+}
+
+/* right container with user info and avatar */
+
+.userinfo-container{
+  border: 1px solid black;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  border-radius: 20px;
+  background-color: #27282e;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-bottom: 15%
+}
+
+/* User Avatar graphic border */
+
+.dashboard-image-container{
+  border-radius: 6em;
+  width: 75%;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  line-height: 0;
+  background-image: url('https://res.cloudinary.com/ddsihrmda/image/upload/v1500409910/backgroundredblue_h9anb5.jpg');
+  background-size: 100%; /* Adjust the scale of your border image */
+}
+
+.user-avatar-image{
+  border-radius: 6em;
+  height: 100%;
+  width: 100%;  
+  margin: 0;
+}
+
+.dashboard-news-container{
+  width: 85%;
+  border: 1px solid black;
+  background-color: #27282e;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-radius: 20px;
+
+}
+
+.userdash-outermost-container{
+  border: 1px solid black;
+  background-image: url('https://res.cloudinary.com/ddsihrmda/image/upload/v1500408202/backgroundunedited_mkplw0.jpg');
+  background-size: cover; /* Adjust the scale of your border image */
+}
+
+.dashboard-news-inner-container{
+  margin: 3%;
+}
+
+/* **********************      */
+/* userDash Page CSS End       */
+/* **********************      */
+
+/* ********************** */
+/* ********************** */
+/* ********************** */

@@ -1,40 +1,55 @@
-<div class="row text-center">
-	<h1>Welcome back, {{user.username}}</h1>
-</div>
 <div class="row">
-	<div class="col-md-10">
-		<div class="upper-left-dashboard-container">
-			<div class="dashboard-news-container">
-				<h2>Troll Patrol News</h2>
+	<div class="col userdash-outermost-container">
+		<div class="row text-center col-md-offset-1">
+				<div class="welcome-div">
+					<h2 class="text-color-userdash">Welcome back, {{user.username}}</h2>
+				</div>
 
-				<h3>Fortnite Release Streaming extravaganza</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-				<h3>Website Release Coming Soon</h3>
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-				<h3>Sign up to be on the front page!</h3>
-				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-			</div>
 		</div>
-	</div>
-	<div class="col-md-2 text-center">
-		<div class="upper-right-dashboard-container">
-			<div class="dashboard-image-container">
-				<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-2.jpg" height="150" width="150" />
+		<div class="row">
+			<div class="col-md-7 col-md-offset-1">
+				<div class="upper-left-dashboard-container">
+					<div class="dashboard-news-container">
+						<div class="dashboard-news-inner-container">
+							<h2 class="text-color-userdash">Troll Patrol News</h2>
+
+							<h3 class="text-color-userdash">Fortnite Release Streaming extravaganza</h3>
+							<p class="text-color-userdash">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+							<h3 class="text-color-userdash">Website Release Coming Soon</h3>
+							<p class="text-color-userdash">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+							<h3 class="text-color-userdash">Sign up to be on the front page!</h3>
+							<p class="text-color-userdash">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="dashboard-member-info-container">
-				<h3>Member since: {{user.date}}</h3>
-				<h3>Member status: {{user.memberStatus}}</h3>
+			<div class="col-md-3 text-center">
+				<div class="userinfo-container">
+					<div class="upper-right-dashboard-container">
+						<div class="dashboard-image-container">
+							<img class="user-avatar-image" src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-2.jpg" height="150" width="150" />
+						</div>
+						<div class="dashboard-member-info-container">
+							<h3 class="text-color-userdash">Member since: {{user.date}}</h3>
+							<h3 class="text-color-userdash">Member status: {{user.memberStatus}}</h3>
+						</div>
+					</div>
+					<br />
+					<br />
+					<br />
+					<div class="lower-dashboard-container text-center">
+
+						<div>
+							<h3 class="text-color-userdash">Main Landing page Stream status:</h3>
+							<div class="userdash-avail-symbol text-color-userdash">Availible</div><div class="userdash-notavail-symbol text-color-userdash">Occupied</div>
+						</div>
+
+						<button type="button" class="btn btn-default text-color-userdash"><a href="/users/StreamerApp">Become a live streamer!</a></button>
+					</div>
+				</div>
 			</div>
-		</div>
-		<br />
-		<br />
-		<br />
-		<div class="lower-dashboard-container text-center">
-			<h3>Main Landing page Stream status:</h3>
-			<h4>Availible</h4>
-			<button type="button" class="btn btn-default"><a href="/users/StreamerApp">Become a live streamer!</a></button>
 		</div>
 	</div>
 </div>
