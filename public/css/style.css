@@ -552,6 +552,11 @@ footer{
 .button-marg{
   margin-top: 22px;
 }
+
+.avatar-select-button{
+  margin: auto;
+  margin-top: 15px;
+}
 /* **********************      */
 /* Login Page CSS End          */
 /* **********************      */
@@ -586,6 +591,18 @@ footer{
 
 .title-login{
   margin-top: 20px;
+}
+
+.avatar-image-register{
+  border: 1px solid black;
+}
+
+.under-avatar{
+  margin-top: 25px;
+}
+
+.select-avatar-button{
+
 }
 
 
@@ -652,6 +669,9 @@ footer{
   background-size: 100%; /* Adjust the scale of your border image */
 }
 
+.avatar-container{
+  margin-top: 10px;
+}
 .user-avatar-image{
   border-radius: 6em;
   height: 100%;
