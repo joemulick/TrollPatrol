@@ -519,3 +519,80 @@ footer{
 /* **********************      */
 /* Drop Down FAQ section End   */
 /* **********************      */
+
+/* ********************** */
+/* ********************** */
+/* ********************** */
+
+/* **********************      */
+/* Login Page CSS              */
+/* **********************      */
+
+.login-form-container{
+  width: 30%;
+  margin: 0px auto;
+  height: 100%;
+  margin-bottom: 200px;
+  border: 1px solid black;
+  background-color: #96a6b7;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #96a6b7;
+  padding-bottom: 2.5%
+}
+
+.input-and-label{
+  max-width: 80%;
+  margin: auto;
+}
+
+.title-login{
+  margin-top: 20px;
+}
+
+.button-marg{
+  margin-top: 22px;
+}
+/* **********************      */
+/* Login Page CSS End          */
+/* **********************      */
+
+/* ********************** */
+/* ********************** */
+/* ********************** */
+
+/* ********************** */
+/* ********************** */
+/* ********************** */
+
+/* **********************      */
+/* Register Page CSS           */
+/* **********************      */
+
+.login-form-container{
+  width: 30%;
+  margin: 0px auto;
+  height: 100%;
+  margin-bottom: 200px;
+  border: 1px solid black;
+  background-color: #96a6b7;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #96a6b7;
+}
+
+.input-and-label{
+  max-width: 80%;
+  margin: auto;
+}
+
+.title-login{
+  margin-top: 20px;
+}
+
+
+/* **********************      */
+/* Register Page CSS End       */
+/* **********************      */
+
+/* ********************** */
+/* ********************** */
+/* ********************** */
