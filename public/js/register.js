@@ -1,7 +1,5 @@
 $( document ).ready(function() {
 
-	var selectedURL;
-
 	//// Change the Opacity of the Images on click ////
 	$('.csgo-avatar').click(function() {
 
@@ -84,37 +82,40 @@ $( document ).ready(function() {
 	//// Save whichever photo was clicked last in a variable	////
 	//// and puch it into the appropriate DB					////
 
-	$('.avatar-image-register').click(function() {
+	$('.avatar-select-button').click(function(e) {
+	e.preventDefault()
+	var imageOne = $('.csgo-avatar');
+	var imageTwo = $('.7days-avatar');
+	var imageThree = $('.fortnite-avatar');
+	var imageFour = $('.league-avatar');
 
-		selectedURL = $(this).data('data-url');
-		console.log(selectedURL);
+	if(imageOne.attr('data-selected') == 'yes' || imageTwo.attr('data-selected') == 'yes' || imageThree.attr('data-selected') == 'yes' || imageFour.attr('data-selected') == "yes"){
+	
+	var avatarURL;
+
+	var images = [imageOne,imageTwo,imageThree,imageFour];
+
+	for(var i = 0 ; i < images.length; i++){
+		if(images[i].attr('data-selected') == "yes"){
+			avatarURL = images[i].attr('data-url');
+		}
+	}
+
+	console.log('only if avatar has been selected ' + avatarURL);
+	$.ajax({
+			type: "POST",
+			url: 'users/registerAvatar',
+			data: {
+			       selectedAvatar: avatarURL,
+			   	},
+			success: function(data){
+			console.log(data);
+			}
+				});
+
+	}
 
 	});
 
-	$('.avatar-select-button').click(function(e) {
-
-	e.preventDefault()
 	
-
-
-
-	})
-
-
 });
-
-	// var prefImage;
-	// var selected = ["csgo","7days","fortnite","league"];
-	// var clicked = $(this).attr('data-value')
-	// e.preventDefault()
- //    prefImage = $(this).attr('data-url');
-
- //    // selected.push($(this).attr('data-value'))
-
- //    for(var i = 0 ; i < selected.length ; i++){
- //    	if(selected[i] == clicked){
- //    		$(this).css('opacity', "0.2");
- //    	} else {
- //    		$(this).css('opacity', "1");
- //    	}
- //    }

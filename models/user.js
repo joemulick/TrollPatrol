@@ -15,7 +15,7 @@ var UserSchema = mongoose.Schema({
 		type: String,
 		unique: true
 	},
-	twitchChannelName: {
+	selectedAvatar: {
 		type: String
 	},
 	twitchChannelURL: {

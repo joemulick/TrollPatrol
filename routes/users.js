@@ -31,6 +31,13 @@ router.get('/streamerApp', function(req,res){
 	res.render('streamerApp');
 })
 
+router.post('/users/registerAvatar', function(req, res){
+
+	var selectedAvatar = req.body.selectedAvatar
+	console.log("From backened " + selectedAvatar)
+
+})
+
 // Register User
 router.post('/register', function(req, res){
 	// var yearJoined = new Date().getFullYear;
