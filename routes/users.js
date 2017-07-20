@@ -44,13 +44,14 @@ router.post('/register', function(req, res){
 
 	var email = req.body.email;
 	var username = req.body.username;
+	var userAvatar = req.body.inlineRadioOptions;
 	var password = req.body.password;
 	var password2 = req.body.password2;
 	var twitchChannelName = req.body.twitchChannelName
 	
 
 	// Validation
-	req.checkBody('twitchChannelName', 'You must input a twitch channel name').notEmpty();
+	
 	req.checkBody('email', 'Email is required').notEmpty();
 	req.checkBody('email', 'Email is not valid').isEmail();
 	req.checkBody('username', 'Username is required').notEmpty();
@@ -68,6 +69,7 @@ router.post('/register', function(req, res){
 			username: username,
 			email:email,
 			twitchChannelName: twitchChannelName,
+			userAvatar: userAvatar,
 			password: password,
 			memberStatus: 'newbie'
 
