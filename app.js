@@ -12,7 +12,17 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var logger = require("morgan");
 
-mongoose.connect('mongodb://localhost/TrollPatrol');
+// MONGODB DEPLOY STUFF
+
+var databaseUri = 'mongodb://localhost/TrollPatrol';
+
+if(process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI);
+} else {
+  mongoose.connect(databaseUri)
+}
+
+// MONGODB DEPLOY STUFF
 var db = mongoose.connection;
 
 var routes = require('./routes/index');

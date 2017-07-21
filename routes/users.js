@@ -42,12 +42,12 @@ router.post('/users/registerAvatar', function(req, res){
 router.post('/register', function(req, res){
 	// var yearJoined = new Date().getFullYear;
 
-	var email = req.body.email.toLowerCase();
-	var username = req.body.username.toLowerCase();
-	var userAvatar = req.body.inlineRadioOptions.toLowerCase();
+	var email = req.body.email;
+	var username = req.body.username;
+	var userAvatar = req.body.inlineRadioOptions;
 	var password = req.body.password;
 	var password2 = req.body.password2;
-	var twitchChannelName = req.body.twitchChannelName.toLowerCase();
+	var twitchChannelName = req.body.twitchChannelName;
 
 
 	
