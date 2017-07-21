@@ -192,8 +192,20 @@ footer{
 /* *******************************  */
 /* Upper Social Container           */
 /* *******************************  */
+.headding{
+  background-color: #6441a4 !important;
+}
+
+.panel-headers{
+  font-size: 20px;
+  color: white;
+}
+
+
+
 .social-media-container-1{
   height: 453px;
+  border: black;
 }
 .panel-body{
   min-height: 100%;
@@ -293,6 +305,7 @@ footer{
 .updgrade-container-inner-middle{
   display: inline-block;
   vertical-align:middle;
+  font-size: .75em
 }
 
 .updgrade-container-inner-middle{
@@ -305,6 +318,7 @@ footer{
 }
 .upgrade-disc-text{
   margin: 0px;
+  font-size: .75em
 }
 .updgrade-title{
   
@@ -324,6 +338,7 @@ footer{
 
 .social-media-container-2{
   height: 453px;
+  border: black;
 }
 /* DIVS */
 .fortnite-game-info-div{
@@ -387,10 +402,14 @@ footer{
 }
 
 .twitch-live-player-info-container-inner{
-  margin-left: 10%;
-  margin-bottom: 5%;
+  padding: 30px;
+  margin-left: 15%;
+  /*margin-bottom: 5%;*/
   margin-top: 10%;
   border-radius: 5px;
+  border: 1px solid #374356;
+  background: #6a7b96;
+  border-radius: 10px;
 }
 
 .twitch-live-player-info-container-inner{
@@ -406,8 +425,8 @@ footer{
 .troll-patrol-mission-container-inner{
   margin-right: 10%;
   margin-right: 15%;
-  margin-bottom: 10%;
-  margin-top: 10%;
+  /*margin-bottom: 10%;*/
+  margin-top: 16%;
   border: 1px solid #374356;
   background: #6a7b96;
   border-radius: 10px;
@@ -423,6 +442,8 @@ footer{
   width: 100%;
   height: 1px;
   position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .mission-text{
@@ -440,6 +461,7 @@ footer{
   float: right;
   margin-right: 3%;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 /* *************************************     */
@@ -506,6 +528,7 @@ footer{
     content: "";
     display: table;
     clear: both;
+    min-height: 100px;
   }
 
 .faq-font{
@@ -696,6 +719,8 @@ footer{
 
 .dashboard-news-inner-container{
   margin: 3%;
+  overflow-y: auto;
+  max-height: 360px;
 }
 
 /* **********************      */
