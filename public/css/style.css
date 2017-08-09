@@ -557,10 +557,9 @@ footer{
   margin: 0px auto;
   height: 100%;
   margin-bottom: 200px;
-  border: 1px solid black;
   background-color: #96a6b7;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #96a6b7;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px  #6441a4;
   padding-bottom: 2.5%
 }
 
@@ -571,6 +570,7 @@ footer{
 
 .title-login{
   margin-top: 20px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .button-marg{
@@ -596,17 +596,6 @@ footer{
 /* **********************      */
 /* Register Page CSS           */
 /* **********************      */
-
-.login-form-container{
-  width: 30%;
-  margin: 0px auto;
-  height: 100%;
-  margin-bottom: 200px;
-  border: 1px solid black;
-  background-color: #96a6b7;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #96a6b7;
-}
 
 .input-and-label{
   max-width: 80%;

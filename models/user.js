@@ -1,6 +1,9 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
 
+var fullDate = new Date();
+var fullYear = fullDate.getFullYear()
+
 // User Schema
 var UserSchema = mongoose.Schema({
 	username: {
@@ -22,7 +25,9 @@ var UserSchema = mongoose.Schema({
 		type: String
 	},
 	authorizedStreamer: false,
-	date: { type: Date, default: Date.now },
+	date: { 
+		type: Number
+	},
 	memberStatus: {
 		type: String
 	},

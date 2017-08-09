@@ -48,6 +48,7 @@ router.post('/register', function(req, res){
 	var password = req.body.password;
 	var password2 = req.body.password2;
 	var twitchChannelName = req.body.twitchChannelName;
+	var date = new Date().getFullYear();
 
 
 	
@@ -73,8 +74,8 @@ router.post('/register', function(req, res){
 			twitchChannelName: twitchChannelName,
 			userAvatar: userAvatar,
 			password: password,
-			memberStatus: 'newbie'
-
+			memberStatus: 'newbie',
+			date: date,
 		});
 
 		User.createUser(newUser, function(err, user){
