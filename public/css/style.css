@@ -298,20 +298,26 @@ footer{
 
 .updgrade-container-inner-left{
   width: 50%;
+  margin: 0px;
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 2.5%;
   vertical-align:middle;
 }
 
 .updgrade-container-inner-middle{
+  width: 20%;
+  margin: 0px;
   display: inline-block;
   vertical-align:middle;
   font-size: .75em
 }
 
-.updgrade-container-inner-middle{
+.updgrade-container-inner-right{
+  width: 25%;
+  margin: 0px;
   display: inline-block;
   vertical-align:middle;
+  font-size: .75em
 }
 
 .upgrade-panel{
@@ -327,6 +333,10 @@ footer{
 
 .upgrade-img{
   height: 65px;
+}
+
+.panel-header-text{
+  margin: 0px;
 }
 
 /* *******************************  */
@@ -716,6 +726,12 @@ footer{
 /* **********************      */
 /* userDash Page CSS End       */
 /* **********************      */
+
+@media only screen and (max-width: 1350px) {
+    .panel-header-text {
+       font-size: .85em;
+    }
+}
 
 /* ********************** */
 /* ********************** */
