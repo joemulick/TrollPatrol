@@ -193,44 +193,15 @@ footer{
 /* *******************************  */
 /* Upper Social Container           */
 /* *******************************  */
-.panel-outer{
-  position: relative;
-}
-
-.header-over-image{
-  color: white;
-  position: absolute;
-  top:1.8%;
-  left:39%;
-  z-index: 99;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 1.6em;
-}
-
-.header-over-image-2{
-  color: white;
-  position: absolute;
-  top:1.8%;
-  left:30%;
-  z-index: 99;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 1.55em;
-}
-
-.border-image{
-  position: absolute;
-  top:0;
-  left:0;
-  min-width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  z-index: 98;
-}
-
-
 .headding{
   background-color: #6441a4 !important;
 }
+
+.panel-headers{
+  font-size: 20px;
+  color: white;
+}
+
 
 
 .social-media-container-1{
