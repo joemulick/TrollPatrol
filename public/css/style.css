@@ -407,10 +407,9 @@ footer{
 .twitch-live-player-info-container-inner{
   border: 1px solid #374356;
   background: #6a7b96;
-  border-radius: 10px;
   min-height: 215px;
   width: 96%;
-  margin-top: 1.5%;
+  margin-top: 1%;
   margin-left: 2%;
 }
 
