@@ -24,13 +24,18 @@ var UserSchema = mongoose.Schema({
 	twitchChannelURL: {
 		type: String
 	},
+	
 	authorizedStreamer: false,
+
 	date: { 
 		type: Number
 	},
 	memberStatus: {
 		type: String
 	},
+
+	currentlyStreaming: false,
+
 	games: [ { title: String } ]
 	// loggedIn: false
 });
