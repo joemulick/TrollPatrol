@@ -491,8 +491,8 @@ footer{
 .dropdown {
     position: relative;
     display: inline-block;
-    width: 100%;
-    margin-top: 7%;
+    width: 85%;
+    border-top: black 1.5px solid;
 }
 
 /* Dropdown Content (Hidden by Default) */
