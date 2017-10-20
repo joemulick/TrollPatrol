@@ -732,6 +732,12 @@ footer{
        font-size: .85em;
     }
 }
+
+@media only screen and (max-width: 1600px) {
+    .panel-header-text {
+       font-size: .85em;
+    }
+}
 /* ********************** */
 /* ********************** */
 /* ********************** */
