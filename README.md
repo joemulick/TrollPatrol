@@ -56,17 +56,6 @@ Any additional ideas for functionality or content on the website will be heavily
 
 If you have ideas write them down similar to how I described above and if you have the time draw up wireframs like this!
 
-                                    - LANDING PAGE -
-
-![lpn2test](https://user-images.githubusercontent.com/20348042/28294401-bd5a036e-6b0e-11e7-8102-9ee8044f6312.jpg)
-----------------------------------------------------------------------------------------------------------------------------------------
-
-
-                                    - NEWBIE DASHBOARD - 
-
-![userdash](https://user-images.githubusercontent.com/20348042/28101373-f3f0e190-667c-11e7-8dd1-398911f80dfb.png)
-
-
 
 
  
